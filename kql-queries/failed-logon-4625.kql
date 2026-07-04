@@ -1,0 +1,5 @@
+// Query all failed logon attempts (Event ID 4625) forwarded via AMA to Sentinel/LAW
+SecurityEvent
+| where EventID == 4625
+| project TimeGenerated, Account, Computer, IpAddress, LogonType, FailureReason
+| order by TimeGenerated desc

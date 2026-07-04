@@ -1,0 +1,5 @@
+// Pivot on a specific source IP to isolate activity from a confirmed malicious actor
+SecurityEvent
+| where IpAddress == "80.94.95.83"
+| project TimeGenerated, EventID, Account, Computer, IpAddress, LogonType, Activity
+| order by TimeGenerated desc
