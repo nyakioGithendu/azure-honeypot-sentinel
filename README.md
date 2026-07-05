@@ -17,7 +17,7 @@ This project simulates a real-world SOC detection workflow: deploying an interne
 
 ## Architecture
 
-![Architecture Diagram](architecture/architecture-diagram.png)
+![Architecture Diagram](architecture/architecture-diagram.svg)
 
 ```
 Internet (open inbound NSG rule)
@@ -165,7 +165,7 @@ All Azure resources (VM, NSG, LAW, Sentinel workspace) were deprovisioned after 
 ```
 ├── README.md
 ├── architecture/
-│   └── architecture-diagram.png
+│   └── architecture-diagram.svg
 ├── screenshots/
 │   ├── 01-nsg-inbound-rule.png
 │   ├── 02-vm-overview.png
